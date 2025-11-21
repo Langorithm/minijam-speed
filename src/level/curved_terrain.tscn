@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ds13li73aug0n"]
-
-[ext_resource type="Script" uid="uid://cmiyg7ya0gwst" path="res://level/curved_terrain.gd" id="1_ujl71"]
-
-[node name="Path2D" type="Path2D"]
-script = ExtResource("1_ujl71")
