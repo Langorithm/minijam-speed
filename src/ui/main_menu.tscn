@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://sgd20s6j6f6u"]
+[gd_scene load_steps=7 format=3 uid="uid://sgd20s6j6f6u"]
+
+[ext_resource type="Script" uid="uid://xg3q5p6hagxf" path="res://ui/main_menu.gd" id="1_t7e0r"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]
 colors = PackedColorArray(0.22143444, 0.35912007, 0.537351, 1, 0.117980786, 0.20860344, 0.32570085, 1)
@@ -29,6 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_t7e0r")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
