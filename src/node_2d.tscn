@@ -1,3 +1,59 @@
-[gd_scene format=3 uid="uid://cuhg5tbg1xcop"]
+[gd_scene load_steps=9 format=3 uid="uid://cuhg5tbg1xcop"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://cmiyg7ya0gwst" path="res://level/curved_terrain.gd" id="1_wtcfe"]
+
+[sub_resource type="Gradient" id="Gradient_0e48y"]
+colors = PackedColorArray(0.30980393, 0.57254905, 1, 1, 0.30980393, 0.84313726, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_epypp"]
+gradient = SubResource("Gradient_0e48y")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0.28418803, 0.036324788)
+
+[sub_resource type="Curve2D" id="Curve2D_wtcfe"]
+bake_interval = 20.0
+_data = {
+"points": PackedVector2Array(-11.162899, 165.36777, 11.162899, -165.36777, -393, 169, -213.01453, 194.14252, 213.01453, -194.14252, 310, 196, 80.97092, 32.302593, -80.97092, -32.302593, -8, -215, 165.51462, -40.04454, -165.51462, 40.04454, -507, -161, 41.26234, -131.25531, -41.26234, 131.25531, -708, 63, -60.99633, -164.76186, 60.99633, 164.76186, -528, 344, -45.243042, -48.24714, 45.243042, 48.24714, -264, 456, 8.037408, -37.761337, -8.037408, 37.761337, -325, 539, -38.261665, -135.36217, 38.261665, 135.36217, -145, 630, -31.95047, -78.14777, 31.95047, 78.14777, 79, 560, -144.67409, -102.71651, 144.67409, 102.71651, 89, 773, 16.277933, 93.71538, -16.277933, -93.71538, 409, 677)
+}
+point_count = 12
+
+[sub_resource type="Gradient" id="Gradient_wtcfe"]
+colors = PackedColorArray(0.33752537, 0.4182175, 0.1055452, 1, 0.08420309, 0.35982004, 0.33299786, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0e48y"]
+gradient = SubResource("Gradient_wtcfe")
+
+[sub_resource type="Gradient" id="Gradient_epypp"]
+colors = PackedColorArray(0.5882353, 0.4627451, 0.3372549, 1, 0.5520588, 0.41032428, 0.28566843, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0hol4"]
+gradient = SubResource("Gradient_epypp")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.9722222)
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="BG" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_epypp")
+metadata/_edit_lock_ = true
+
+[node name="curved_terrain" type="Path2D" parent="."]
+texture_filter = 1
+position = Vector2(1484, 2313)
+rotation = 2.5063941
+scale = Vector2(2.7284377, 3.028138)
+curve = SubResource("Curve2D_wtcfe")
+script = ExtResource("1_wtcfe")
+edge_texture = SubResource("GradientTexture2D_0e48y")
+center_texture = SubResource("GradientTexture2D_0hol4")
+visible_collision = false
+metadata/_custom_type_script = "uid://cmiyg7ya0gwst"
