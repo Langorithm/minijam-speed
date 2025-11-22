@@ -10,6 +10,8 @@ points = PackedVector2Array(100, 0, 62.3, 78.1, -22.5, 97.5, -90.1, 43.4, -90.1,
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(252, 395)
+floor_constant_speed = true
+floor_max_angle = 1.3962634
 speed = 500.0
 friction = 0.9
 jump_velocity = 750.0
