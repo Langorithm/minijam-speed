@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgdfctrwgfkb"
-path="res://.godot/imported/grassCenter.png-b8c15124e52b27000a6ba01c37c37294.ctex"
+uid="uid://biaybcytj5jec"
+path="res://.godot/imported/grassCliffAlt_left.png-63de85764fbaf71cee9144ef1a2114c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/grassCenter.png"
-dest_files=["res://.godot/imported/grassCenter.png-b8c15124e52b27000a6ba01c37c37294.ctex"]
+source_file="res://level/ground_sprites/grassCliffAlt_left.png"
+dest_files=["res://.godot/imported/grassCliffAlt_left.png-63de85764fbaf71cee9144ef1a2114c5.ctex"]
 
 [params]
 

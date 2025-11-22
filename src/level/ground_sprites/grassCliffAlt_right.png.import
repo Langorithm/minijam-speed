@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwllqhnu7ahjw"
-path="res://.godot/imported/grassHalf_right.png-6dca963c3532f0673d73b1f70b01feab.ctex"
+uid="uid://0ls5w131i06e"
+path="res://.godot/imported/grassCliffAlt_right.png-0d2fb163d0d9f452dce47afab39f9a52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/grassHalf_right.png"
-dest_files=["res://.godot/imported/grassHalf_right.png-6dca963c3532f0673d73b1f70b01feab.ctex"]
+source_file="res://level/ground_sprites/grassCliffAlt_right.png"
+dest_files=["res://.godot/imported/grassCliffAlt_right.png-0d2fb163d0d9f452dce47afab39f9a52.ctex"]
 
 [params]
 
