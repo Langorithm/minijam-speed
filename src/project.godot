@@ -29,6 +29,14 @@ window/size/viewport_height=1080
 
 enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://level/": "yellow",
+"res://player/": "pink",
+"res://ui/": "green"
+}
+
 [input]
 
 move_left={
