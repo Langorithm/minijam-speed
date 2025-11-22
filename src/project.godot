@@ -29,6 +29,11 @@ window/size/viewport_height=1080
 
 enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_9="Ground"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
