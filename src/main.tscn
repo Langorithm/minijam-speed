@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsfuiufaxerp1"]
+[gd_scene load_steps=3 format=3 uid="uid://bsfuiufaxerp1"]
 
 [ext_resource type="PackedScene" uid="uid://drapboanvam8" path="res://player/player.tscn" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://jjk1pdib4y63" path="res://pngwing.com.png" id="2_0xm2m"]
-
-[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_ig7tw"]
-points = PackedVector2Array(100, 0, 62.3, 78.1, -22.5, 97.5, -90.1, 43.4, -90.1, -43.4, -22.5, -97.5, -22.5, -97.5, 62.3, -78.1)
+[ext_resource type="PackedScene" uid="uid://d1neg60d6e75k" path="res://boulder/boulder.tscn" id="2_0xm2m"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -27,15 +24,4 @@ jump_buffer_time = 1.2
 position = Vector2(3, 855)
 polygon = PackedVector2Array(63, -71, 430, -162, 613, -104, 666, -4, 917, 44, 1092, -119, 1171, -329, 1328, -368, 1544, -329, 1699, -201, 1891, -105, 1928, 79, 1835, 260, 914, 320, -12, 253)
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-mass = 3.43
-gravity_scale = 0.524
-
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-position = Vector2(1176, 437)
-scale = Vector2(0.15737505, 0.25164583)
-texture = ExtResource("2_0xm2m")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(1168, 427)
-shape = SubResource("ConvexPolygonShape2D_ig7tw")
+[node name="Boulder" parent="." instance=ExtResource("2_0xm2m")]
