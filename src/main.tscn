@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsfuiufaxerp1"]
+
+[ext_resource type="PackedScene" uid="uid://drapboanvam8" path="res://player/player.tscn" id="1_ig7tw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(252, 395)
+speed = 500.0
+friction = 0.9
+jump_velocity = 750.0
+additional_jump_height = 200.0
+jump_release_force = 70.0
+fall_gravity_multiplier = 3.0
+coyote_time = 0.6
+jump_buffer_time = 1.2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(3, 855)
+polygon = PackedVector2Array(63, -71, 430, -162, 613, -104, 666, -4, 917, 44, 1092, -119, 1171, -329, 1328, -368, 1544, -329, 1699, -201, 1891, -105, 1928, 79, 1835, 260, 914, 320, -12, 253)
